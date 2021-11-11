@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="casarito.css">
+    <title>EL CASARITO</title>
+</head>
+<body>
+    <div class="head">
+        <h1>- HOTEL EL CASARITO - </h1>
+    </div>
+    <div class="menu">
+        <div class="ms1"></div>
+        <div class="mboton">
+            <div class="mr"><a href="formulario.html"><button class="bmr"><b>Registarte</b></button></a></div>
+            <div class="mry"><a href="form.html"><button class="bmry"><b>Reserva Ya</b></button></a></div>
+            <div class="mmi"><a href="http://www.laalberca.com/principal"><button class="bmmi"><b>Más Información</b></button></a></div>
+        </div>
+        <div class="ms2"></div>
+    </div>
+    <div class="space1"></div>
+    <div class="info">
+
+
+        
+
+        <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img1.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img2.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img3.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+
+
+
+
+    </div>
+    <div class="space2"></div>
+    <div class="foot">
+        <div class="footer">
+            <div class="rs">
+                <a href="https://www.instagram.com/" target="_blank"><img src="insta-icon.jfif" alt="instagram logo" class="iconos insta"></a>
+                <a href="https://discord.com/" target="_blank"><img src="disc-icon.png" alt="discord logo" class="iconos disc"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="twt-icon.png" alt="twitter logo" class="iconos twt"></a>
+                <a href="https://github.com/AdrianCMI" target="_blank"><img src="git-icon.png" alt="git logo" class="iconos hub"></a>
+                <a href="https://about.facebook.com/es/meta/" target="_blank"><img src="meta-icon.png" alt="meta logo" class="iconos meta"></a>
+    
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
